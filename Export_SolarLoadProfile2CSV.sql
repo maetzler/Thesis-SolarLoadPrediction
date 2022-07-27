@@ -11,7 +11,7 @@ SET LONG 10000
 set arraysize 5000
 SET TERMOUT OFF
 alter session  set NLS_NUMERIC_CHARACTERS= '.,';
-spool H:\UNIGIS\2017\Masterarbeit\Daten\Solar_Load_Profiles\Solar_Load_Profile_alle_Volleinspeiser_2018.csv
+spool .\Solar_Load_Profile_alle_Volleinspeiser_2018.csv
 
 select 'NEI_ID;HAUS_ID;ZP_ID;TIMESTAMP;WERT' from dual;
 
