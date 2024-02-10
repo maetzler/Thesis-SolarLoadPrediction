@@ -1,2 +1,2 @@
 # Thesis-SolarPowerPrediction
-Code for Scripts in the Master Thesis of Andreas Mätzler
+Script-Code from the Master Thesis of Andreas Mätzler
