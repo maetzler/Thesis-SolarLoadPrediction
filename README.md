@@ -10,15 +10,35 @@ Fakultät für Digitale und Analytische Wissenschaften, Universität Salzburg
 Entwicklung einer kurzfristigen Lastvorhersage mit GIS- und Data Analytics-Methoden
 
 ## Gliederung, Notebooks & Skripte
+Alle Dateien, Scripts und Verzeichnisse folgen dem **Pipeline-Stage-First (PSF)** Schema:
 
-| # | Beschreibung | Technologien |
-| :-: | :--- | :--- |
-| **S1** | Oracle SQL – Export der PV-Lastprofile (2018) aus dem Energiedatenmanagementsystem | `Oracle SQL`, `EDM` |
-| **S2** | Konvertierung der EUMETSAT SEVIRI NAT-Dateien in GeoTIFF (multithreaded, Clip auf Vorarlberg / Bodenseeregion) | `GDAL`, `Rasterio`, `Multiprocessing` |
-| **S3** | Feature-Extraktion: SEVIRI-Bandwerte je PV-Anlage und Zeitstempel | `Pandas`, `Geopandas` |
-| **S4** | Datenvorverarbeitung und Feature Engineering | `Pandas`, `NumPy` |
-| **S5** | Kurzfristprognose der SEVIRI-Wolkenbewegung mittels OpenCV Optical Flow | `OpenCV`, `Optical Flow` |
-| **S6** | CatBoost-Regression mit Rolling-Window Cross-Validation und Random Search Hyperparameter-Optimierung | `CatBoost`, `Scikit-Learn` |
+```
+<STAGE><SUBSTAGE>_<BEREICH>_<INHALT>_<DETAIL>.<ext>
+```
+
+### Stufendefinition
+
+| Stage | Kürzel | Name | Bereich | Werkzeug |
+|---|---|---|---|---|
+| 1 | `S1` | Data Export | EVU | Oracle SQL / CMD |
+| 2 | `S2` | Spatial Processing | EVU | ArcGIS Pro / Python |
+| 3 | `S3` | ETL & Feature Join | EVU | FME Workbench |
+| 4 | `S4` | Preprocessing | LOCAL | Python Notebook |
+| 5 | `S5` | Modelling & HPO | LOCAL | Python / CatBoost |
+| 6 | `S6` | Prediction / CMV | LOCAL | Python / OpenCV |
+
+### Bereich-Kürzel
+
+| Kürzel | Bedeutung |
+|---|---|
+| `EVU` | Firmennetzwerk – kein öffentlicher Zugriff |
+| `LOC` | Lokaler Rechner |
+
+### Konvention: Scripts & Notebooks
+
+```
+S<N>[a|b]_<EVU|LOC>_<Inhalt>_<Detail>.<ext>
+```
 
 ## Datengrundlage
 
