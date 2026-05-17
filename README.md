@@ -11,13 +11,14 @@ Entwicklung einer kurzfristigen Lastvorhersage mit GIS- und Data Analytics-Metho
 
 ## Gliederung, Notebooks & Skripte
 
-| #  | Beschreibung
-| 01 | Oracle SQL – Export der PV-Lastprofile (2018) aus dem Energiedatenmanagementsystem
-| 02 | Konvertierung der EUMETSAT SEVIRI NAT-Dateien in GeoTIFF (multithreaded, Clip auf Vorarlberg / Bodenseeregion)
-| 03 | Feature-Extraktion: SEVIRI-Bandwerte je PV-Anlage und Zeitstempel
-| 04 | Datenvorverarbeitung und Feature Engineering
-| 05 | Kurzfristprognose der SEVIRI-Wolkenbewegung mittels OpenCV Optical Flow
-| 06 | CatBoost-Regression mit Rolling-Window Cross-Validation und Random Search Hyperparameter-Optimierung
+| # | Beschreibung | Technologien |
+| :-: | :--- | :--- |
+| **S1** | Oracle SQL – Export der PV-Lastprofile (2018) aus dem Energiedatenmanagementsystem | `Oracle SQL`, `EDM` |
+| **S2** | Konvertierung der EUMETSAT SEVIRI NAT-Dateien in GeoTIFF (multithreaded, Clip auf Vorarlberg / Bodenseeregion) | `GDAL`, `Rasterio`, `Multiprocessing` |
+| **S3** | Feature-Extraktion: SEVIRI-Bandwerte je PV-Anlage und Zeitstempel | `Pandas`, `Geopandas` |
+| **S4** | Datenvorverarbeitung und Feature Engineering | `Pandas`, `NumPy` |
+| **S5** | Kurzfristprognose der SEVIRI-Wolkenbewegung mittels OpenCV Optical Flow | `OpenCV`, `Optical Flow` |
+| **S6** | CatBoost-Regression mit Rolling-Window Cross-Validation und Random Search Hyperparameter-Optimierung | `CatBoost`, `Scikit-Learn` |
 
 ## Datengrundlage
 
