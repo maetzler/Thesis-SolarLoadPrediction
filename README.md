@@ -57,3 +57,10 @@ S<N>[a|b]_<EVU|LOC>_<Inhalt>_<Detail>.<ext>
 ## Lizenz
 Dieses Repository enthält ausschließlich Code im Rahmen der akademischen Arbeit.  
 Eine kommerzielle Nutzung ist nicht gestattet.
+
+Copyright (c) 2026 Andreas Mätzler
+
+All rights reserved.
+
+You may not use, copy, modify, distribute, or reproduce this code
+for any purpose without explicit written permission from the author.
