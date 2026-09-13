@@ -1,5 +1,8 @@
 # Master Thesis
-Code und Notebooks zur Masterarbeit "Erzeugungsprognose für PV-Anlagen - Entwicklung einer kurzfristigen Lastvorhersage mit GIS- und Data Analytics-Methoden" im Rahmen des Universitätslehrganges „Geographical Information Science & Systems“ (UNIGIS MSc) am Fachbereich Geoinformatik (Z_GIS), 
+Code und Notebooks zur Masterarbeit
+
+"Erzeugungsprognose für PV-Anlagen - Entwicklung einer kurzfristigen Lastvorhersage mit GIS- und Data-Analytics-Methoden"
+im Rahmen des Universitätslehrganges „Geographical Information Science & Systems“ (UNIGIS MSc) am Fachbereich Geoinformatik (Z_GIS),
 Fakultät für Digitale und Analytische Wissenschaften, Universität Salzburg
 
 **Autor:** Andreas Mätzler  
