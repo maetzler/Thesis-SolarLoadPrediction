@@ -27,6 +27,8 @@ Alle Dateien, Scripts und Verzeichnisse folgen dem **Pipeline-Stage-First (PSF)*
 | 5 | `S5` | Modelling & HPO | LOCAL | Python / CatBoost |
 | 6 | `S6` | Prediction / CMV | LOCAL | Python / OpenCV |
 
+Hinweis: Stage S2/S3 - Geoprocessing-Scripts aus dem EVU-Bereich dürfen aus Sicherheitsgründen nicht veröffentlicht werden. Über den Aufbau und Ablauf sind Diagramme und Screenshots in der Thesis abgebildet.
+
 ### Bereich-Kürzel
 
 | Kürzel | Bedeutung |
