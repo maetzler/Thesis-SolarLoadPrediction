@@ -44,17 +44,16 @@ S<N>[a|b]_<EVU|LOC>_<Inhalt>_<Detail>.<ext>
 
 ## Datengrundlage
 
-- **PV-Lastprofile:** Viertelstundenwerte 2018, Volleinspeisung, Netzgebiet Vorarlberg
-- **Satellitendaten:** Meteosat SEVIRI (EUMETSAT), Bänder VIS006, VIS008, IR039, WV062, IR108 u.a.
-- **Globalstrahlung:** Bodenmessung als Referenz-Feature
+- **PV-Lastprofile:** Viertelstundenwerte aus 2018, Volleinspeisung, Netzgebiet Vorarlberg
+- **Satellitendaten:** Meteosat SEVIRI MSG (EUMETSAT), Bänder VIS006, VIS008, IR039, WV062, IR108 u.a.
+- **Globalstrahlung:** Berechnung aus DHM mit ArcGIS Radiation Tool
 
 > Die Rohdaten sind nicht im Repository enthalten (Datenschutz / Dateigröße).
 
 ## Technologie-Stack
-
-- Python 3.13.9 · CatBoost · scikit-learn · SHAP
-- satpy · pyresample · GDAL · OpenCV
-- pandas · numpy · matplotlib · plotly · seaborn
+Python 3.13.9 - CatBoost - scikit-learn - SHAP
+satpy - pyresample - GDAL - OpenCV - Rasterio
+pandas - numpy - matplotlib - plotly - seaborn
 
 ## Lizenz
 Dieses Repository enthält ausschließlich Code im Rahmen der akademischen Arbeit.  
